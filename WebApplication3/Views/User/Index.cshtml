@@ -1,0 +1,11 @@
+﻿@model System.Collections.Generic.IEnumerable<WebApplication3.Models.User>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@foreach (var item in Model)
+{
+    <p>@item.Email - @item.Role!.Name <a asp-controller="User" asp-action="Detail" asp-route-userId="@item.Id">detail</a></p>
+}
