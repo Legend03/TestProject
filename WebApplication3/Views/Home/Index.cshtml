@@ -1,8 +1,1924 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<body>
+    <!-- ------------------------------- -->
+<!-- ------------------------------- -->
+    <div class="container">
+      <div class="preMain">
+        <div class="logotip">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="listSelection" style="margin-top: 4%;">
+          <ul>
+            <li class="listItem">new ▾</li>
+            <li class="listItem">designers ▾</li>
+            <li class="listItem">women ▾</li>
+            <li class="listItem">men ▾</li>
+            <li class="listItem">clearence ▾</li>
+          </ul>
+        </div>
+        <div class="cart">
+          <select name="select" id="cart-select" style="  font-size: 13px;">
+            <option value="0" class="selectedNone" >Your cart</option>
+          </select>
+          <div class="cart-info">
+            <div class="clear">
+              <img src="images/VectorSmartObject_5.png" alt="" />
+            </div>
+            <div class="clear-items">0 items | $ 0</div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------- -->
+      <div class="main">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="pic">
+                <img src="images/slide.jpg" />
+                <img class="swiper-text" src="images/slicerImgText.jpg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic">
+                <img src="images/slide.jpg" />
+                <img class="swiper-text" src="images/slicerImgText.jpg" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pic">
+                <img src="images/slide.jpg" />
+                <img class="swiper-text" src="images/slicerImgText.jpg" />
+              </div>
+            </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+            <div class="swiper-slide">
+              <div class="pic">
+                <img src="images/slide.jpg" />
+                <img class="swiper-text" src="images/slicerImgText.jpg" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="pic">
+                <img src="images/slide.jpg" />
+                <img class="swiper-text" src="images/slicerImgText.jpg" />
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <style>
+          .pic {
+            max-width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        </style>
+        <script>
+          const swiper = new Swiper(".swiper", {
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+              el: ".swiper-pagination",
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+        <style>
+          .swiper {
+            width: 100%;
+            max-width: 1200px;
+          }
+
+          .swiper-text {
+            margin-bottom: 100px;
+            position: absolute;
+            max-width: 380px;
+            transform: translateX(-60%);
+          }
+        </style>
+      </div>
+      <!-- ------------------------------- -->
+      <div class="secondHeader">
+        <div class="first">
+          <p>Stay updated</p>
+          <input type="text" placeholder="Your email adress" />
+          <button class="btnSecond" type="submit">+</button>
+        </div>
+
+        <div class="second">
+          <p>Find us here</p>
+          <div class="icons">
+            <div class="fisrtImg">
+              <img class="itemImg" src="images/Shape2.png" alt="" />
+            </div>
+            <div class="secondImg">
+              <img class="itemImg" src="images/Shape3.png" alt="" />
+            </div>
+            <div class="thirdImg">
+              <img class="itemImg" src="images/Shape4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------- -->
+      <div class="mainContainerOfAd">
+        <div class="containerOfAd">
+          <div class="leftBlock">
+            <img src="images/ph1_03.jpg" alt="" class="leftImg" />
+            <div class="slogan">
+              <span class="slogan__top">best</span>
+              <span class="slogan__slim">Outfits</span>
+              <span class="slogan__separate">&</span>
+              <span class="slogan__down">looks</span>
+            </div>
+          </div>
+          <div class="rightBlock">
+            <div class="upBlock">
+              <img src="images/ph1_04.jpg" alt="" class="leftImg" />
+              <div class="sloganSecond">
+                <div class="slogan__circle">
+                  <div class="slogan__circle slogan__circle--small">
+                    <span class="slogan__fancy">Summer</span>
+                    <span class="slogan__slim slogan__slim--small">Party</span>
+                    <span class="slogan__down-circle">collection</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottomBlock">
+              <div class="leftBottomBlock">
+                <img src="images/ph1_05.jpg" alt="" class="leftImg" />
+                <div class="sloganThird">
+                  <span class="slogan__white"> Best sellers &#10095; </span>
+                </div>
+              </div>
+              <div class="rightBottomBlock">
+                <img src="images/ph1_06.jpg" alt="" class="leftImg" />
+                <div class="textRightBottom">
+                  <span> FAIL LEATHER </span>
+                  <button>SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------- -->
+      <section class="hotspot">
+        <div class="containerSec">
+          <div class="hotspot__header">
+            <div class="hotspot__titles">
+              <div class="hotspot__title hotspot__title--active">
+                what's hot?
+              </div>
+              <div class="hotspot__title">Designers</div>
+              <div class="hotspot__title">featured</div>
+              <div class="hotspot__title">latest</div>
+            </div>
+            <div id="hot-arrows" data-id="hot-slider" class="hotspot__arrows">
+              <span id="hot-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="hot-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="designer-arrows"
+              data-id="designer-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="designer-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="designer-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="featured-arrows"
+              data-id="featured-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="featured-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="featured-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="latest-arrows"
+              data-id="latest-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="latest-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="latest-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+          </div>
+        </div>
+        <div id="hot-slider" class="hotspot__area">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$80</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth1.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sale">
+                    <span class="sale__text">sale</span>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sale">
+                    <span class="sale__text">sale</span>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth4.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth5.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="designer-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth5.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="featured-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sale">
+                    <span class="sale__text">sale</span>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="latest-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------- -->
+      <div class="emblemOfScale">
+        <div class="sales__badgetbox">
+          <div class="badget">
+            <img src="images/badget.png" alt="" />
+            <div class="badget__content">
+              <span class="badget__text">Clearance</span>
+              <div class="badget__down">
+                <span class="badget__text badget__text--big">50</span>
+                <span class="badget__text">off</span>
+                <span class="badget__abs">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 col-m-4 col-s-6 sales__col">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth6.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-m-4 col-s-6 sales__col">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth1.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-m-4 col-s-6 sales__col mobile-hide">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth3.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-m-4 col-s-6 sales__col tablet-hide">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth4.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="favouriteBrands">
+        <div class="bottomTextBrands">
+          <hr />
+          <span>FAVOURITE BRANDS</span>
+        </div>
+
+        <div class="brands">
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand1.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand2.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand4.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand7.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand5.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand6.jpg" alt="" />
+          </div>
+          <div class="itemBrand">
+            <img class="brandImg" src="images/brand3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="bottomRow">
+          <hr />
+        </div>
+      </div>
+
+      <div class="aboutContent">
+        <section class="about mobile-hide">
+          <div class="container">
+            <h2 class="about__title">About LookShop</h2>
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              dolor error voluptate distinctio eos pariatur culpa iusto
+              quisquam. Unde quidem explicabo provident nemo eius est sed
+              numquam architecto fuga dolore! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Quod, eos totam officia facere quae
+              beatae facilis, quibusdam sapiente inventore blanditiis nihil
+              officiis rem velit cumque sunt deserunt aspernatur? Sint, ipsa?
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="contentOfCarts">
+        <div class="text">
+          <p class="textCarts" style="margin-top: 21px">We accept:</p>
+        </div>
+
+        <div class="cartsImage">
+          <div class="item">
+            <img src="images/c1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c3.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c4.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c5.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c6.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c7.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c8.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c9.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c10.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/c11.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section class="bottom mobile-hide">
+        <div class="container" style="padding-bottom: 120px">
+          <div class="row">
+            <div class="col-4 col-m-6 bottom__box">
+              <div class="bottom__sub">
+                <h3 class="bottom__title">Customer Service</h3>
+                <ul class="bottom__list">
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom__sub">
+                <h3 class="bottom__title">Information</h3>
+                <ul class="bottom__list">
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-m-6 bottom__box">
+              <div class="bottom__sub">
+                <h3 class="bottom__title">Customer Service</h3>
+                <ul class="bottom__list">
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom__sub">
+                <h3 class="bottom__title">Customer Service</h3>
+                <ul class="bottom__list">
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                  <li class="bottom__item">
+                    <a href="#" class="bottom__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-m-6 bottom__box">
+              <div class="bottom__sub">
+                <h3 class="bottom__title">Social</h3>
+                <div class="social">
+                  <span class="social__icon"
+                    ><i class="fab fa-twitter"></i
+                  ></span>
+                  <span class="social__icon"
+                    ><i class="fab fa-facebook-f"></i
+                  ></span>
+                  <span class="social__icon"
+                    ><i class="fab fa-pinterest"></i></span
+                  ><br />
+                  <span class="social__icon"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></span>
+                  <span class="social__icon"
+                    ><i class="fab fa-tumblr"></i
+                  ></span>
+                  <span class="social__icon"
+                    ><i class="fab fa-vimeo-v"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="bottom__sub">
+                <div class="bottom__secure">
+                  <img src="images/secure.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="mobileHeader">
+      <div class="top">
+        <p>CUSTOM CARE: 888-88-888</p>
+      </div>
+      <!-- ------------------------------- -->
+      <div class="preMainMain">
+        <div class="preMain">
+          <div class="leftMobile">$ US▾</div>
+
+          <div class="centerMobile">
+            <div class="centerImg">
+              <img src="images/accountImage.jpg" alt="" />
+            </div>
+            <div class="centerText" >MY ACCOUNT</div>
+          </div>
+          <div class="rightMobile">
+            <img src="images/Shape1.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------- -->
+      <div class="logotipMobile">
+        <img src="images/logo.png" alt="" class="logoMobileImg" />
+      </div>
+      <!-- ------------------------------- -->
+      <div class="buy">
+        <div class="leftBuy">
+          <img src="images/VectorSmartObject_5.png" alt="" />
+        </div>
+        <div class="rightBuy">0 items | 0 $</div>
+      </div>
+      <!-- ------------------------------- -->
+      <div class="menuMobile">
+        <div class="leftMenuMobile">MENU</div>
+        <div class="rightMenuMobile">
+          <img src="images/icons8-menu-24.png" alt="" />
+        </div>
+      </div>
+      <!-- ------------------------------- -->
+      <section class="hotspotSec">
+        <div class="containerSec">
+          <div class="hotspot__header">
+            <div class="hotspot__titles">
+              <div class="hotspot__title hotspot__title--active">
+                what's hot?
+              </div>
+              <div class="hotspot__title">Designers</div>
+              <div class="hotspot__title">featured</div>
+              <div class="hotspot__title">latest</div>
+            </div>
+            <div id="hot-arrows" data-id="hot-slider" class="hotspot__arrows">
+              <span id="hot-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="hot-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------- -->
+      
+      <section class="hotspot">
+        <div class="containerSec">
+          <div class="hotspot__header">
+            <div class="hotspot__titles">
+              <div class="hotspot__title hotspot__title--active">
+                what's hot?
+              </div>
+              <div class="hotspot__title">Designers</div>
+              <div class="hotspot__title">featured</div>
+              <div class="hotspot__title">latest</div>
+            </div>
+            
+            <div id="hot-arrows" data-id="hot-slider" class="hotspot__arrows">
+              <span id="hot-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="hot-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="designer-arrows"
+              data-id="designer-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="designer-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="designer-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="featured-arrows"
+              data-id="featured-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="featured-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="featured-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+            <div
+              id="latest-arrows"
+              data-id="latest-slider"
+              class="hotspot__arrows hotspot__arrows--hide"
+            >
+              <span id="latest-prev" class="hotspot__arrow">&#10094;</span>
+              <span id="latest-next" class="hotspot__arrow">&#10095;</span>
+            </div>
+          </div>
+        </div>
+        <div id="hot-slider" class="hotspot__area">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$80</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth1.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth4.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth5.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="designer-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth5.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="featured-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth2.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth3.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="latest-slider" class="hotspot__area hide">
+          <div class="row hotspot__list">
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth7.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-20 hide">
+              <div class="product">
+                <div class="product__photo">
+                  <img src="images/cloth6.jpg" alt="" />
+                  <div class="product__cover">
+                    <div class="product__stemple">
+                      <div>
+                        <i class="fas fa-shopping-bag icon icon--shop"></i
+                        ><br />
+                        shop it
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__content">
+                  <span class="product__name">something nice</span>
+                  <span class="product__price">$76.96</span>
+                  <button class="btn btn--product">
+                    ADD TO CART <span class="product__plus">+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="productsMobile">
+        <div class="MobileProduct">
+          <img src="images/cloth5.jpg" alt="">
+        </div>
+        <div class="costProductMobile">
+          <p class="firstMobile">SOMETHING NICE</p>
+          <p class="secondMobile">$76.96</p>
+          <button class="thirdMobile">ADD TO CART +</button>
+        </div>
+      </div>
+      <div class="emblemOfScale">
+        <div class="sales__badgetbox">
+          <div class="badget">
+            <img src="images/badget.png" alt="" />
+            <div class="badget__content">
+              <span class="badget__text">Clearance</span>
+              <div class="badget__down">
+                <span class="badget__text badget__text--big">50</span>
+                <span class="badget__text">off</span>
+                <span class="badget__abs">%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3-first col-3 col-m-4 col-s-6 sales__col">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth6.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3-first col-3 col-m-4 col-s-6 sales__col">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth1.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-m-4 col-s-6 sales__col mobile-hide">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth3.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-m-4 col-s-6 sales__col tablet-hide">
+          <div class="product">
+            <div class="product__photo">
+              <img src="images/cloth4.jpg" alt="" />
+              <div class="product__cover">
+                <div class="product__stemple">
+                  <div>
+                    <i class="fas fa-shopping-bag icon icon--shop"></i><br />
+                    shop it
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__content product__content--dark">
+              <span class="product__name">something nice</span>
+              <span class="product__price">$76.96</span>
+              <button class="btn btn--product">
+                ADD TO CART <span class="product__plus">+</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------------- -->
+      <footer class="footerSec">
+        <div class="containerMob">
+
+          <div>
+            <div class="textMobFooter">&copy; LookShop.com</div>
+            <div class="textMobFooter">All Right Reserved</div>
+          </div>
+        </div>
+      </footer>
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+    </div>
+  </body>
