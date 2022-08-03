@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IopGqUpsEgIz9LPe6xGdnUAprsclhZrZrZl8nqmR89XSlJaNOar0myPqihPbW9gdJptzgI4oK1AFj/D//EMJwQ==",
+  "dgSpecHash": "uix3Kxf3jDua2LkbZdMXzJ9MPSmn/dp5TkHz0M2smQOiFIhhwiXcq5VvUkDnPwuV7jqYXiS85kAkPiMkb7sMDw==",
   "success": true,
-  "projectFilePath": "D:\\MyProject.NET\\MainProject\\WebApplication3\\WebApplication3.csproj",
+  "projectFilePath": "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\punda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\punda\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

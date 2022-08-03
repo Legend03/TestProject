@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProject.NET\\MainProject\\WebApplication3\\WebApplication3.csproj": {}
+    "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
-    "D:\\MyProject.NET\\MainProject\\WebApplication3\\WebApplication3.csproj": {
+    "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProject.NET\\MainProject\\WebApplication3\\WebApplication3.csproj",
+        "projectUniqueName": "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj",
         "projectName": "WebApplication3",
-        "projectPath": "D:\\MyProject.NET\\MainProject\\WebApplication3\\WebApplication3.csproj",
+        "projectPath": "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj",
         "packagesPath": "C:\\Users\\punda\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProject.NET\\MainProject\\WebApplication3\\obj\\",
+        "outputPath": "D:\\MyProject.NET\\TestProject\\WebApplication3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
