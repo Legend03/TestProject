@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\user\\Documents\\DreamSoft\\testProject\\WebApplication3\\WebApplication3.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\user\\Documents\\DreamSoft\\testProject\\WebApplication3\\WebApplication3.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\user\\Documents\\DreamSoft\\testProject\\WebApplication3\\obj\\",
+=======
+    "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj": {}
+  },
+  "projects": {
+    "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj",
+        "projectName": "WebApplication3",
+        "projectPath": "D:\\MyProject.NET\\TestProject\\WebApplication3\\WebApplication3.csproj",
+        "packagesPath": "C:\\Users\\punda\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProject.NET\\TestProject\\WebApplication3\\obj\\",
+>>>>>>> develop
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
